@@ -1,8 +1,10 @@
 # SetAppFull pro
 
+[简体中文](README.md) | [English](README_EN.md)
+
 按应用设置**沉浸式全屏**的 Android 模块，让状态栏、导航栏和屏幕挖孔区域按你的需要显示。支持现代 LSPosed / libxposed API 101、102。
 
-**[下载正式版 APK](https://github.com/tianxing226/SetAppFull-pro/releases/latest)** · [Telegram 频道](https://t.me/tiaxcj) · [验证说明](docs/VERIFICATION.md)
+**[下载正式版 APK](https://github.com/tianxing226/SetAppFull-pro/releases/latest)** · [Telegram 频道](https://t.me/tiaxcj) · [验证说明](https://github.com/tianxing226/SetAppFull-pro/blob/master/docs/VERIFICATION.md)
 
 本项目是 [cokkeijigen/SetAppFull](https://github.com/cokkeijigen/SetAppFull) 的独立维护分支，不是原作者发布的版本。
 
@@ -49,13 +51,13 @@
 
 ## 兼容与验证
 
-2.0.2 的新包名验证结果以 [验证说明](docs/VERIFICATION.md) 为准。。
+2.0.2 的新包名验证结果以 [验证说明](https://github.com/tianxing226/SetAppFull-pro/blob/master/docs/VERIFICATION.md) 为准。
 
 多窗口、画中画和浮动窗口会暂停全屏策略，输入法出现时会释放导航栏控制。Android 11 / 12 使用简化导航效果。
 
 ## 源码与致谢
 
-- [构建与维护说明](MODERNIZATION.md) · [2.0.2 更新说明](RELEASE-2.0.2.md)
+- [构建与维护说明](https://github.com/tianxing226/SetAppFull-pro/blob/master/MODERNIZATION.md) · [2.0.2 更新说明](https://github.com/tianxing226/SetAppFull-pro/blob/master/RELEASE-2.0.2.md)
 - 上游：[cokkeijigen/SetAppFull](https://github.com/cokkeijigen/SetAppFull)，保留原作者归属，采用 [AGPL-3.0](LICENSE) 许可证。
 - 液态玻璃：[Kyant0/AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) / Backdrop。
-- 其他依赖及许可见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+- 其他依赖及许可见[第三方声明](https://github.com/tianxing226/SetAppFull-pro/blob/master/THIRD_PARTY_NOTICES.md)。
