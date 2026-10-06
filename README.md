@@ -28,9 +28,9 @@
     <td align="center">单个应用的全屏规则</td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/home.png" width="230" alt="SetAppFull pro 主页：框架状态和加入群聊按钮"></td>
-    <td><img src="docs/screenshots/apps.png" width="230" alt="SetAppFull pro 设置：应用列表、搜索和筛选"></td>
-    <td><img src="docs/screenshots/rules.png" width="230" alt="SetAppFull pro 全屏规则：状态栏、导航栏与显示缺口控制"></td>
+    <td><img src="https://raw.githubusercontent.com/tianxing226/SetAppFull-pro/65d99e9a14ce1812d39c27b7fc5049dfe60e2c73/docs/screenshots/home.png" width="230" alt="SetAppFull pro 主页：框架状态和加入群聊按钮"></td>
+    <td><img src="https://raw.githubusercontent.com/tianxing226/SetAppFull-pro/65d99e9a14ce1812d39c27b7fc5049dfe60e2c73/docs/screenshots/apps.png" width="230" alt="SetAppFull pro 设置：应用列表、搜索和筛选"></td>
+    <td><img src="https://raw.githubusercontent.com/tianxing226/SetAppFull-pro/65d99e9a14ce1812d39c27b7fc5049dfe60e2c73/docs/screenshots/rules.png" width="230" alt="SetAppFull pro 全屏规则：状态栏、导航栏与显示缺口控制"></td>
   </tr>
 </table>
 
