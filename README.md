@@ -28,7 +28,7 @@
 
 ## 手机界面
 
-以下是 **2.0.1** 在 Android 17 **手机模拟器**中的真实截图，用于展示界面，不代表 2.0.2 新包名版本的测试结果。Probe 是项目测试应用。
+以下是 **2.0.1** 在 Android 17 **手机模拟器**
 
 <table>
   <tr>
@@ -44,7 +44,5 @@
 </table>
 
 ## 验证与来源
-
-验证范围与已知限制见 [验证说明](https://github.com/tianxing226/SetAppFull-pro/blob/master/docs/VERIFICATION.md)，本次包名变更说明见 [2.0.2 更新说明](https://github.com/tianxing226/SetAppFull-pro/blob/master/RELEASE-2.0.2.md)。厂商 ROM、ARM 真机、实体挖孔屏和小米真实权限弹窗仍需对应设备验证。
 
 本项目是 [cokkeijigen/SetAppFull](https://github.com/cokkeijigen/SetAppFull) 的独立维护分支，不是原作者发布的版本。保留原作者归属与 [AGPL-3.0](https://github.com/tianxing226/SetAppFull-pro/blob/master/LICENSE) 许可证。液态玻璃来自 [Kyant0/AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) / Backdrop，其他依赖见 [第三方声明](https://github.com/tianxing226/SetAppFull-pro/blob/master/THIRD_PARTY_NOTICES.md)。
