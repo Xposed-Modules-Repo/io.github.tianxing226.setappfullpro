@@ -2,62 +2,30 @@
 
 [简体中文](README.md) | [English](README_EN.md)
 
-An Android module for configuring **immersive fullscreen** per app. Choose how the status bar, navigation bar, and display cutout area are shown. Supports modern LSPosed / libxposed APIs 101 and 102.
+An LSPosed module for **per-app immersive fullscreen**, supporting modern libxposed APIs 101 and 102.
 
-**[Download the latest release APK](https://github.com/tianxing226/SetAppFull-pro/releases/latest)** · [Telegram channel](https://t.me/tiaxcj) · [Verification notes](https://github.com/tianxing226/SetAppFull-pro/blob/master/docs/VERIFICATION_EN.md)
+**[Download the latest APK](https://github.com/tianxing226/SetAppFull-pro/releases/latest)** · [Telegram channel](https://t.me/tiaxcj) · [Verification notes](https://github.com/tianxing226/SetAppFull-pro/blob/master/docs/VERIFICATION_EN.md)
 
-This is an independently maintained fork of [cokkeijigen/SetAppFull](https://github.com/cokkeijigen/SetAppFull), not a release published by the original author.
+## 2.0.3 update
+
+Fixed status bars remaining visible on some physical devices, improved Activity window and hook argument handling, and fixed the extra top strip in Relief Map. Version remains 2.0.3.
 
 ## Features
 
-- **Fullscreen per app:** Save and toggle rules for each app independently.
-- **Hide system bars:** Control the status bar and navigation bar separately for an immersive fullscreen experience.
-- **Use the display cutout area:** Let window content extend into the cutout area; the actual result depends on the app and system.
-- **Check framework status:** The home screen shows the framework connection, version, and API. Settings show rule and scope synchronization status.
-- **Find apps quickly:** Search, filter, and show system apps. On startup, the module checks app-list access and requests required permissions on supported systems.
-- **Simple interface:** Liquid-glass Home / Settings navigation at the bottom, with light and dark themes.
-
-Fullscreen rules adjust system bars and the window's display area. They cannot guarantee removal of black bars drawn inside an app, and they do not force-stretch or change the aspect ratio of content.
-
-## Screenshots
-
-These are actual screenshots of **version 2.0.1** from an **Android 17 phone emulator**. They show the home and rule settings screens and do not represent test results for the new package-name version. Probe is a test app included with the source.
-
-<table>
-  <tr>
-    <td align="center">Home and framework status</td>
-    <td align="center">App list and filters</td>
-    <td align="center">Fullscreen rules for one app</td>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/tianxing226/SetAppFull-pro/65d99e9a14ce1812d39c27b7fc5049dfe60e2c73/docs/screenshots/home.png" width="230" alt="SetAppFull pro home screen showing framework status and the group chat button"></td>
-    <td><img src="https://raw.githubusercontent.com/tianxing226/SetAppFull-pro/65d99e9a14ce1812d39c27b7fc5049dfe60e2c73/docs/screenshots/apps.png" width="230" alt="SetAppFull pro settings showing the app list, search, and filters"></td>
-    <td><img src="https://raw.githubusercontent.com/tianxing226/SetAppFull-pro/65d99e9a14ce1812d39c27b7fc5049dfe60e2c73/docs/screenshots/rules.png" width="230" alt="SetAppFull pro fullscreen rules for the status bar, navigation bar, and display cutout"></td>
-  </tr>
-</table>
+- Per-app immersive fullscreen with separate status bar, navigation bar, and cutout rules.
+- Manually enable “Allow screenshots” in app details; off by default and subject to DRM and hardware limits.
+- Home screen framework status plus searchable app rules and filters.
+- Android 11+ and modern LSPosed / libxposed API 101/102.
 
 ## Usage
 
-Requires **Android 11 or later** and a working modern LSPosed / libxposed-compatible framework (API 101 or 102). Installing the APK alone does not automatically make other apps fullscreen.
+1. Install the APK and enable **SetAppFull pro** in LSPosed.
+2. Add target apps to the module scope.
+3. Choose each app in Settings and enable the needed rules.
+4. Restart the target app to check the result.
 
-1. Download and install the APK, then enable **SetAppFull pro** in your framework manager.
-2. Open the home screen and check the framework connection status. Find the target app under Settings.
-3. Grant the app a module scope, enable fullscreen, and choose the system bar and cutout rules you need.
-4. Restart the target app and check the result. Turn off its rules and restart it to restore the default display.
+## Verification and limits
 
-On standard Android, app-list access is granted during installation and does not trigger an extra prompt. Some vendor systems require separate authorization. If the list is incomplete, open the system permission settings from the Settings page.
+Version 2.0.3 was verified on a Xiaomi Android 17/API 37 phone with Relief Map and Douyin; the MuMu regression suite passed 22/22. No separate Android 16 physical device or dedicated PopupWindow scenario was available. DRM and hardware-secure content remain subject to Android and vendor restrictions.
 
-**Starting with 2.0.2, the app uses the standalone package name `io.github.tianxing226.setappfullpro`.**
-
-## Compatibility and verification
-
-See the [verification notes](https://github.com/tianxing226/SetAppFull-pro/blob/master/docs/VERIFICATION_EN.md) for results using the new package name in 2.0.2.
-
-Fullscreen policies are suspended in multi-window, picture-in-picture, and floating-window modes. Navigation bar control is released when the keyboard appears. Android 11 / 12 use simplified navigation behavior.
-
-## Source and credits
-
-- [Build and maintenance notes](https://github.com/tianxing226/SetAppFull-pro/blob/master/MODERNIZATION_EN.md) · [2.0.2 release notes](https://github.com/tianxing226/SetAppFull-pro/blob/master/RELEASE-2.0.2_EN.md)
-- Upstream: [cokkeijigen/SetAppFull](https://github.com/cokkeijigen/SetAppFull). Original author attribution is retained under the [AGPL-3.0](LICENSE) license.
-- Liquid glass: [Kyant0/AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) / Backdrop.
-- See the [third-party notices](https://github.com/tianxing226/SetAppFull-pro/blob/master/THIRD_PARTY_NOTICES_EN.md) for other dependencies and licenses.
+This is an independently maintained fork of [cokkeijigen/SetAppFull](https://github.com/cokkeijigen/SetAppFull), licensed under [AGPL-3.0](LICENSE).
