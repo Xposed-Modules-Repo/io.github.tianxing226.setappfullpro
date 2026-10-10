@@ -1,11 +1,12 @@
-# SetAppFull pro 2.0.5 verification
+# Compatibility Notes
 
-Version: 2.0.5 / 205; Android 11+; libxposed API 101 / 102.
+[简体中文](VERIFICATION.md) | [English](VERIFICATION_EN.md)
 
-- Passed: 22 unit tests, release build, release lint, APK metadata checks, and release signature verification.
-- Checked: Bilibili portrait video detail page top layout and return to Home.
-- Unverified: the general FusionApp rule, VPN compatibility at runtime, and persistence across restarts. Instrumentation tests and a full app regression suite were not run for this release.
-
-VPN compatibility handles common VPN status queries only in selected apps and is off by default. It does not change routing or handle proxy detection, TLS validation, or certificate pinning. Screenshots remain subject to DRM and hardware protection.
+- Requires Android 11 or later and a modern LSPosed / libxposed-compatible framework (API 101 or 102).
+- The framework controls scope authorization. A newly scoped app usually needs restarting; saving a rule does not mean the module is already loaded.
+- Existing custom rules, explicit disables and resets take precedence over scoped defaults.
+- Multi-window, picture-in-picture and floating windows suspend fullscreen policies. Navigation-bar control is released while the keyboard is visible.
+- Bilibili playback optimization is limited to designated player pages in known versions and can be disabled independently. Version 9.14.0 may have startup issues in some environments and is not guaranteed compatible; unknown versions retain native behavior.
+- Native aspect-ratio borders, encoded black bars, DRM and hardware protection may remain. Screenshot and VPN-detection compatibility options are off by default.
 
 [Back to usage](../README_EN.md)
